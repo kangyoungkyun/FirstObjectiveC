@@ -17,5 +17,13 @@
 -(void)print{
     NSLog(@"wheels : %i, seats : %i" , wheels, seats);
 }
+
+
+//구현
+-(void)setWheels:(int)w Seats:(int)s{
+    wheels = w;
+    seats = s;
+}
+
 @end
 

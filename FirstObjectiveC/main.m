@@ -17,11 +17,14 @@ int main(int argc, const char * argv[]) {
         
         //5. 값 할당 및 출력
         //도트로 값 할당 가능
-        hello.wheels = 4;
-        hello.seats = 2;
+        //hello.wheels = 4;
+        //hello.seats = 2;
+        [hello setWheels:4 Seats:2];
         
         //getter 호출
         NSLog(@"wheels : %i, seats : %i", [hello getWheels], [hello seats]);
+        
+        
     }
     return 0;
 }

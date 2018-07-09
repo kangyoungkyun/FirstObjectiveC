@@ -11,13 +11,15 @@
     //객체 설정
     @interface Vehicle : NSObject{
         //1.member variable -  맴버 변수 선언
-        //        int wheels;
-        //        int seats;
+
     }
 
     //2.member method - 맴버 메서드 선언
     //getter setter 대신에 property 작성
     @property (getter=getWheels, setter=wheels:)int wheels;
     @property int seats;
+
+    //인자 값이 두개인 메서드 선언
+    -(void)setWheels:(int)w Seats: (int)s;
 
 @end
