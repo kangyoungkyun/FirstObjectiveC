@@ -64,8 +64,12 @@ int main(int argc, const char * argv[]) {
         Vehicle *hello = [Vehicle new]; //create instance object
         
         //5. 값 할당 및 출력
-        [hello wheels: 4];
-        [hello setSeats: 2];
+        //도트로 값 할당 가능
+        hello.wheels = 4;
+        hello.seats = 2;
+        
+        //[hello wheels: 4];
+        //[hello setSeats: 2];
         
         //삭제하고
         //[hello print];
