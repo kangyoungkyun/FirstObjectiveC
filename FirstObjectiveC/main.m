@@ -19,10 +19,44 @@ int main(int argc, const char * argv[]) {
         //도트로 값 할당 가능
         //hello.wheels = 4;
         //hello.seats = 2;
+        //동시에 값 할당하기
         [hello setWheels:4 Seats:2];
         
+        //[hello drawCircleXYR:1 :2 :3];
+        
         //getter 호출
-        NSLog(@"wheels : %i, seats : %i", [hello getWheels], [hello seats]);
+        //NSLog(@"wheels : %i, seats : %i", [hello getWheels], [hello seats]);
+        
+        //if문
+        if(hello.wheels == 3){
+            NSLog(@"wheels : 3");
+        }else{
+            NSLog(@"no");
+        }
+        
+        //switch 문
+        switch (hello.seats) {
+            case 4:
+                NSLog(@"wheels : 4");
+                break;
+            case 2:
+                NSLog(@"seats : 2");
+                break;
+            default:
+                NSLog(@"no");
+                break;
+        }
+        
+        
+        for(int i = 0; i<hello.wheels; i++){
+            NSLog(@"wheels : %i", i);
+        }
+        
+        int i = 0;
+        while (i < hello.seats) {
+            NSLog(@"seats : %i", i);
+            i++;
+        }
         
         
     }

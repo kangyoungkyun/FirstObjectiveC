@@ -11,7 +11,6 @@
     //객체 설정
     @interface Vehicle : NSObject{
         //1.member variable -  맴버 변수 선언
-
     }
 
     //2.member method - 맴버 메서드 선언
@@ -19,7 +18,12 @@
     @property (getter=getWheels, setter=wheels:)int wheels;
     @property int seats;
 
+
+
     //인자 값이 두개인 메서드 선언
     -(void)setWheels:(int)w Seats: (int)s;
+
+    //-(void)drawCircleXYR: (int)x :(int)y :(int)r;
+
 
 @end
