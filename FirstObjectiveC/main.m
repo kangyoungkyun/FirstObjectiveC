@@ -19,7 +19,11 @@
 //2.member method - 맴버 메서드 선언
 -(void)setWheels:(int)w;
 -(void)setSeats:(int)s;
+//getter
+-(int)wheels;
+-(int)seats;
 -(void)print;
+
 @end
 
 
@@ -27,11 +31,19 @@
 @implementation Vehicle
 -(void)setWheels:(int)w{
     wheels = w;
-    
 }
 
 -(void)setSeats:(int)s{
     seats = s;
+}
+
+
+-(int)wheels{
+    return wheels;
+}
+
+-(int)seats{
+    return seats;
 }
 
 -(void)print{
@@ -48,7 +60,11 @@ int main(int argc, const char * argv[]) {
         //5. 값 할당 및 출력
         [hello setWheels: 4];
         [hello setSeats: 2];
-        [hello print];
+        
+        //삭제하고
+        //[hello print];
+        //getter 호출
+        NSLog(@"wheels : %i, seats : %i", [hello wheels], [hello seats]);
     }
     return 0;
 }
